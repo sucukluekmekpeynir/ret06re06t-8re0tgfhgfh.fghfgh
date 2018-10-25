@@ -354,14 +354,14 @@ client.on("guildMemberAdd", member => {
 	var channel = member.guild.channels.find("name", "giriş-çıkış");
 	if (!channel) return;
 	
-	var role = member.guild.roles.find("name", "Üye");
+	var role = member.guild.roles.find("name", "Kafadar Ailesi");
 	if (!role) return;
 	
 	member.addRole(role); 
 	
-	channel.send(member + " artık " + role + " rolü ile aramızda");
+	channel.send(member + " Artık " + role + " İle Botumuzu Desteklemek İçin Sunucuya Katıldı. ");
 	
-	member.send("Aramıza hoş geldin! Artık @Üye rolüne sahipsin!")
+	member.send("Sunucumuza Hoşgeldin! "+ member + ")
 	
 });
 
