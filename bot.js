@@ -361,7 +361,7 @@ client.on("guildMemberAdd", member => {
 	
 	channel.send(member + " Artık " + role + " İle Botumuzu Desteklemek İçin Sunucuya Katıldı. ");
 	
-	member.send("Sunucumuza Hoşgeldin! " + member + " ")
+	member.send("Sunucumuza Hoşgeldin!")
 	
 });
 
