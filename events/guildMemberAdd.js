@@ -1,8 +1,5 @@
-client.on('guildMemberAdd', uye =&gt; {
-  // Belirli bir kanala mesaj atması için kod. Buna göre "#gelen-giden" kanalına mesaj atacak:
-  const channel = uye.guild.channels.find('name', 'giriş-çıkış');
-  // Eğer kanal yoksa, hiçbir şey yapma:
-  if (!channel) return;
-  // Üyeyi etiketleyerek "#gelen-giden" kanalına mesaj at:
-  channel.send(`Sunucuya hoş geldin, ${uye}`);
-});
+module.exports = member => {
+    let username = member.user.username;
+    member.send('Hoş geldin **' + username + '**!');
+    member.guild.defaultChannel.send('hg '+username+'');
+};
