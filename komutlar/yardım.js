@@ -13,7 +13,7 @@ exports.run = (client, message, params) => {
   .addField("**Ana Komutlar**", "k?yardım = BOT Komutlarını Gösterir.\n \k?bilgi = BOT Kendisi Hakkında Bilgi Verir.\n \k?ping = BOT Gecikme Süresini Söyler.\n \k?davet = BOT Davet Linkini Atar.\n \k?istatistik = BOT İstatistiklerini Atar.")
   .addField("**Müzik Komutları**","k?çal = İştediğiniz Şarkıyı Çalar.\n \k?geç = Sıradaki şarkıya geçer sırada şarkı yoksa kanaldan çıkar.\n \k?ses = Müziğin sesini artırır.\n \k?çalan = Çalan Şarıyı Gösterir.\n \k?duraklat = Müziği Duraklatır.")
   .addField("**Yapımcı**", " **Süleyman Yıldız** ")
-  .setFooter('**Bot Sürümü 2.0.0.0'dır**')
+  .setFooter("**Bot Sürümü 2.0.0.0'dır** ")
   if (!params[0]) {
     const commandNames = Array.from(client.commands.keys());
     const longest = commandNames.reduce((long, str) => Math.max(long, str.length), 0);
