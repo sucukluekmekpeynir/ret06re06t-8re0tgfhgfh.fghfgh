@@ -8,16 +8,16 @@ require("moment-duration-format");
 exports.run = (client, msg) => {
   const duration = moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]");
   msg.channel.sendCode("YETKİLİ KOMUTLARI:",`
-dve!ban:         ^Belirlediğiniz bir kullanıcıyı sunucudan kalıcı olarak atarsınız.^
-dve!kur:         ^Bot için gerekli odaları kurar.^
-dve!oylama:      ^Standart bir oylama yapmanızı sağlar.^
-dve!reboot:      ^Botu yeniden yapmanızı sağlar.^
-dve!sunucular:   ^Botun bulunduğu sunucuları gösterir.^
-dve!tavsiye:     ^Bot'a tavsiye yollamanızı sağlar.^
-dve!yaz:         ^Bot üzerinden yazı yazmanızı sağlar.^
-dve!kilit:       ^Kanalı belirli bir süre kilitlemenizi sağlar.^
+k?ban:         ^Belirlediğiniz bir kullanıcıyı sunucudan kalıcı olarak atarsınız.^
+k?kur:         ^Bot için gerekli odaları kurar.^
+k?oylama:      ^Standart bir oylama yapmanızı sağlar.^
+k?reboot:      ^Botu yeniden yapmanızı sağlar.^
+k?sunucular:   ^Botun bulunduğu sunucuları gösterir.^
+k?tavsiye:     ^Bot'a tavsiye yollamanızı sağlar.^
+k?yaz:         ^Bot üzerinden yazı yazmanızı sağlar.^
+k?kilit:       ^Kanalı belirli bir süre kilitlemenizi sağlar.^
 
-* örn: dve!ban <sebep>
+* örn: k?ban <sebep>
 
 `);
 };

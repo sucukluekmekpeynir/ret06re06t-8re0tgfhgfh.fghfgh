@@ -8,19 +8,17 @@ require("moment-duration-format");
 exports.run = (client, msg) => {
   const duration = moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]");
   msg.channel.sendCode("MÜZİK KOMUTLARI:",`
-dve!çal:         ^Yazdığınız şarkıyı çalar.^
-dve!kuyruk:      ^Şarkı kuyruğunu gösterir.^
-dve!devam:       ^Duraklatılan şarkıya devam eder.^
-dve!geç:         ^Çalan şarkıyı geçer.^
-dve!dur:         ^Çalınan şarkıyı duraklatır.^
-dve!çalan:       ^Mesajı yazdığınız anda hangi şarkının çaldığını gösterir.^
-dve!duraklat:    ^Oynatılan şarkıyı duraklatır.^
-dve!ses:         ^Oynatılan şarkının ses seviyesini ayarlar.^
-dve!gir:         ^Bulunduğun kanala giriş yapar.^
-dve!ayrıl:       ^Bulunduğun kanaldan çıkış yapar.^
+k?çal:         ^Yazdığınız şarkıyı çalar.^
+k?sıra:      ^Şarkı kuyruğunu gösterir.^
+k?devam:       ^Duraklatılan şarkıya devam eder.^
+k?geç:         ^Çalan şarkıyı geçer.^
+k?dur:         ^Çalınan şarkıyı duraklatır.^
+k?çalan:       ^Mesajı yazdığınız anda hangi şarkının çaldığını gösterir.^
+k?duraklat:    ^Oynatılan şarkıyı duraklatır.^
+k?ses:         ^Oynatılan şarkının ses seviyesini ayarlar.^
 
 
-* örn: dve!çal <şarkıismi>
+* örn: k?çal <şarkıismi>
 
 `);
 };

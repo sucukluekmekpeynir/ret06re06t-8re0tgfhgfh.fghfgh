@@ -8,8 +8,8 @@ exports.run = (client, message, params) => {
   .setTitle("Eğlence komutları")
   .setDescription('')
   .setColor(0x00ffff)
-      .setDescription('**•** dve!ascii = Yazdığınız yazıyı asciiya dönüştürür.\n**•** dve!atla = Atlama gifi atar.\n**•** dve!coolresim = Cool resim gösterir.\n**•** dve!jdi = Jdi resmi atar.\n**•** dve!mesajdöndür = Yazdığınız mesajı döndürür.\n**•** dve!emojiyazı = Yazdığınız yazıyı emojili hale çevirip atar.\n**•** dve!eski = Resminizi eskileştirir.\n**•** dve!gif = Rastgele gif atar.\n**•** dve!tkm = Taş,kağıt,makas oyununu oynarsınız.\n**•** dve!starwars = Starwars filmini izlersiniz.')
-      .setFooter('Örnek kullanım: dve!ascii <yazı>')
+      .setDescription('**•** k?ascii = Yazdığınız yazıyı asciiya dönüştürür.\n**•** k?atla = Atlama gifi atar.\n**•** k?coolresim = Cool resim gösterir.\n**•** k?jdi = Jdi resmi atar.\n**•** k?mesajdöndür = Yazdığınız mesajı döndürür.\n**•** k?emojiyazı = Yazdığınız yazıyı emojili hale çevirip atar.\n**•** k?eski = Resminizi eskileştirir.\n**•** k?gif = Rastgele gif atar.\n**•** k?tkm = Taş,kağıt,makas oyununu oynarsınız.\n**•** k?starwars = Starwars filmini izlersiniz.')
+      .setFooter('Örnek kullanım: k?ascii <yazı>')
 
   if (!params[0]) {
     const commandNames = Array.from(client.commands.keys());

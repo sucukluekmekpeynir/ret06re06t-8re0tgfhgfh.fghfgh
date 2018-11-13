@@ -6,12 +6,12 @@ exports.run = (client, message) => {
   const embed = new Discord.RichEmbed()
     .setAuthor(message.author.username, message.author.avatarURL)
   .setColor("RANDOM")
-  .setDescription("**Bot yapımıcısı:** <@403882308412637186>")
-  .setFooter('Dinle ve Eğlen | dvebot.rf.gd', client.user.avatarURL)
+  .setDescription("**Bot yapımıcısı:** Süleyman Yıldız")
+  .setFooter('Kralbot| https://kralbotdiscord.wordpress.com/', client.user.avatarURL)
   .setThumbnail("")
   .setTimestamp()
-  .addField("» Linkler", `[Bot Davet Linki](https://discordapp.com/oauth2/authorize?client_id=460723895268278283&scope=bot&permissions=2146958591)` + "**\n**"+`[DBL Oyver](https://discordbots.org/bot/460723895268278283)`+ "**\n**"+`[Destek Sunucusu](https://discord.gg/U2byS7x)`, false)
-  .setURL('https://discordapp.com/oauth2/authorize?client_id=460723895268278283&scope=bot&permissions=2146958591')
+  .addField("» Linkler", `[Bot Davet Linki](https://discordapp.com/api/oauth2/authorize?client_id=498573744030351377&permissions=2146958583&scope=bot)` + "**\n**"+`[Destek Sunucusu](https://discordbots.org/bot/460723895268278283)`+ "**\n**"+`[Destek Sunucusu](https://discord.gg/gwmBhyV)`, false)
+  .setURL('https://discordapp.com/api/oauth2/authorize?client_id=498573744030351377&permissions=2146958583&scope=bot')
   	.setThumbnail(client.user.avatarURL);
 
   message.channel.send({embed});

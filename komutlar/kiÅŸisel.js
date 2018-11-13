@@ -8,19 +8,18 @@ require("moment-duration-format");
 exports.run = (client, msg) => {
   const duration = moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]");
   msg.channel.sendCode("KULLANICI KOMUTLARI:",`
-dve!afk:         ^Afk moduna geçersiniz.^
-dve!bilgi:       ^Bot hakkında bilgiler alırsınız.^
-dve!davet:       ^Botun davet linkini gönderir.^
-dve!destek:      ^Botun destek sunucusunu yollar.^
-dve!geldim:      ^Afk modundan çıkmanızı sağlar.^
-dve!istatistik:  ^Botun istatistiklerini atar.^
-dve!kullanıcı:   ^Yazan kullanıcının hakkında bilgiler verir.^
-dve!ping:        ^Botun pingini gösterir.^
-dve!sunucu:      ^Sunucu hakkında bilgiler verir.^
-dve!hatabildir:  ^Botta bulunan bir hatayı göndermenizi sağlar.^
-dve!yardım:      ^Yardım komutlarını gösterir.^
+k?afk:         ^Afk moduna geçersiniz.^
+k?bilgi:       ^Bot hakkında bilgiler alırsınız.^
+k?davet:       ^Botun davet linkini gönderir.^
+k?destek:      ^Botun destek sunucusunu yollar.^
+k?geldim:      ^Afk modundan çıkmanızı sağlar.^
+k?istatistik:  ^Botun istatistiklerini atar.^
+k?ping:        ^Botun pingini gösterir.^
+k?sunucu:      ^Sunucu hakkında bilgiler verir.^
+k?hatabildir:  ^Botta bulunan bir hatayı göndermenizi sağlar.^
+k?yardım:      ^Yardım komutlarını gösterir.^
 
-* örn: dve!afk <sebep>
+* örn: k?afk <sebep>
 
 `);
 };

@@ -8,13 +8,13 @@ require("moment-duration-format");
 exports.run = (client, msg) => {
   const duration = moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]");
   msg.channel.sendCode("OYUN KOMUTLARI:",`
-dve!mcskin:          ^Minecraft skininizi gösterir.^
-dve!mcsunucu:        ^Minecraft sunucu istatistiklerinizi gösterir.^
-dve!mcbaşarım:       ^Minecraft başarısı kazanırsınız.^
-dve!rocketleague:    ^Rocketleague istatistiklerinizi gösterir.^
-dve!battlefield:     ^Battlefield istatistiklerinizi gösterir.^
+k?mcskin:          ^Minecraft skininizi gösterir.^
+k?mcsunucu:        ^Minecraft sunucu istatistiklerinizi gösterir.^
+k?mcbaşarım:       ^Minecraft başarısı kazanırsınız.^
+k?rocketleague:    ^Rocketleague istatistiklerinizi gösterir.^
+k?battlefield:     ^Battlefield istatistiklerinizi gösterir.^
 
-* örn: dve!skin <ihsanbakidogan>
+* örn: k?mcskin <skin adı>
 
 `);
 };

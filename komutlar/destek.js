@@ -8,11 +8,11 @@ require("moment-duration-format");
 exports.run = (client, msg) => {
   const duration = moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]");
   msg.channel.sendCode("DESTEK KOMUTLARI:",`
-dve!talep:         ^Bir talep odası açılarak şikayetlerinizi belirtebilirsiniz.^
-dve!canlıdestek:   ^Canlıdestek talebi yollarsınız.^
-dve!yapımcı:       ^Botun yapımcısını gösterir.^
+k?talep:         ^Bir talep odası açılarak şikayetlerinizi belirtebilirsiniz.^
+k?canlıdestek:   ^Canlıdestek talebi yollarsınız.^
+k?yapımcı:       ^Botun yapımcısını gösterir.^
 
-* örn: dve!talep
+* örn: k?talep
 
 `);
 };

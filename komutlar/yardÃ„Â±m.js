@@ -8,9 +8,9 @@ exports.run = (client, message, params) => {
   .setTitle("Komut Listesi")
   .setDescription('')
   .setColor(0x00ffff)
-      .setDescription('**•** dve!eğlence = Eğlence komutları\n**•** dve!kişisel = Kişisel komutlar\n**•** dve!yetkili = Yetkili komutları\n**•** dve!oyun = Oyun komutları\n**•** dve!müzik = Müzik komutları\n**•** dve!destek = Destek komutları')
-      .addField("» Linkler", `[Bot Davet Linki](https://discordapp.com/oauth2/authorize?client_id=460723895268278283&scope=bot&permissions=2146958591)` + "**\n**"+`[DBL Oyver](https://discordbots.org/bot/460723895268278283)`+ "**\n**"+`[Destek Sunucusu](https://discord.gg/U2byS7x)`, false)
-      .setFooter('Örnek kullanım: dve!eğlence')
+      .setDescription('**•** k?eğlence = Eğlence komutları\n**•** k?kişisel = Kişisel komutlar\n**•** k?yetkili = Yetkili komutları\n**•** k?oyun = Oyun komutları\n**•** k?müzik = Müzik komutları\n**•** k?destek = Destek komutları')
+      .addField("» Linkler", `[Bot Davet Linki](https://discordapp.com/api/oauth2/authorize?client_id=498573744030351377&permissions=2146958583&scope=bot)` + "**\n**"+`[Botun Sitesi](https://kralbotdiscord.wordpress.com/)`+ "**\n**"+`[Destek Sunucusu](https://discord.gg/gwmBhyV)`, false)
+      .setFooter('Örnek kullanım: k?eğlence')
 
   if (!params[0]) {
     const commandNames = Array.from(client.commands.keys());
